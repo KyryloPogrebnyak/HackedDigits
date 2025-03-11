@@ -1,3 +1,5 @@
+// 🕹️ Welcome to the Credit Card Validation Zone! 🔍
+
 // All valid credit card numbers
 const valid1 = [4, 5, 3, 9, 6, 7, 7, 9, 0, 8, 0, 1, 6, 8, 0, 8];
 const valid2 = [5, 5, 3, 5, 7, 6, 6, 7, 6, 8, 7, 5, 1, 4, 3, 9];
@@ -98,4 +100,14 @@ const idInvalidCardCompanies = invalidBatch => {
 };
 
 // Example usage
-console.log(idInvalidCardCompanies(findInvalidCards(batch))); // Array of companies
+console.log("🎮 Welcome to the Card Validator Indie Edition!");
+console.log("🔍 Scanning all cards...");
+setTimeout(() => {
+  const invalidCardsList = findInvalidCards(batch);
+  console.log(`🚨 Detected ${invalidCardsList.length} invalid cards!`);
+
+  const issuers = idInvalidCardCompanies(invalidCardsList);
+  console.log("🏭 The following issuers have issued invalid cards:", issuers);
+
+  console.log("✅ Validation complete. Stay safe in the digital world!");
+}, 900);

@@ -1,26 +1,36 @@
-# Credit Card Checker
+# 🎮 Credit Card Checker – HackedDigits Edition 💳✨
 
-This project contains functions to validate credit card numbers using the Luhn algorithm, find invalid credit card numbers, and identify the companies that issued these invalid numbers.
+**A lightweight, standalone tool to validate credit card numbers using the Luhn algorithm.**  
+Detects invalid numbers and traces them back to their issuers – all in a simple, plug-and-play setup.  
 
-## Functions
+## 🛠️ Features
 
-1. **validateCred(arr)**: 
-   - Takes an array of digits representing a credit card number.
-   - Returns `true` if the number is valid, `false` otherwise.
+- **Luhn Algorithm Validation** – Checks if a credit card number is legit.
+- **Fraud Detection** – Identifies invalid credit cards in bulk.
+- **Issuer Tracking** – Finds out which companies issued the faulty cards.
+- **Minimal & Efficient** – No unnecessary complexity, just clean and functional code.
 
-2. **findInvalidCards(cards)**: 
-   - Takes a nested array of credit card numbers.
-   - Returns a nested array of invalid credit card numbers.
+---
 
-3. **idInvalidCardCompanies(invalidBatch)**: 
-   - Takes a nested array of invalid credit card numbers.
-   - Returns an array of companies that issued these invalid numbers.
+## 🚀 How It Works
 
-## Usage
+1️⃣ **validateCred(arr)** – Validates a single credit card number.  
+   - Input: An array of digits.  
+   - Output: `true` (valid) / `false` (invalid).  
 
-To use these functions, simply call them with the appropriate arguments. For example:
+2️⃣ **findInvalidCards(cards)** – Scans multiple cards for invalid numbers.  
+   - Input: A nested array of credit card numbers.  
+   - Output: A nested array of invalid numbers.  
+
+3️⃣ **idInvalidCardCompanies(invalidBatch)** – Identifies issuers of invalid cards.  
+   - Input: A list of invalid card numbers.  
+   - Output: A list of companies responsible.  
+
+---
+
+## 📌 Usage Example
 
 ```javascript
-console.log(validateCred(valid1)); // true or false
-console.log(findInvalidCards(batch)); // Array of invalid card numbers
-console.log(idInvalidCardCompanies(findInvalidCards(batch))); // Array of companies
+console.log(validateCred(valid1)); // true or false  
+console.log(findInvalidCards(batch)); // Array of invalid card numbers  
+console.log(idInvalidCardCompanies(findInvalidCards(batch))); // Array of companies  
